@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/accountUsername_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+            android:text="@string/text_login_account_username"
+            android:padding="5dp"
+            android:textColor="@color/black" />
+
+        <AutoCompleteTextView
+            android:id="@+id/accountUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountUsername_title"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/accountPassword_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountUsername"
+            android:padding="5dp"
+            android:text="@string/text_login_account_password"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/accountPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountPassword_title"
+            android:padding="5dp"
+            android:password="true"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/rememberPasswordBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountPassword"
+            android:padding="5dp"
+            android:text="@string/text_login_remember_password" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rememberPasswordBox"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/action_login" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

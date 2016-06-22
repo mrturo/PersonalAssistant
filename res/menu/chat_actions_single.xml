@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/deleteMessages"
+		android:icon="@drawable/ic_action_discard"
+		android:title="@string/action_chat_delete_messages"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/copyMessages"
+		android:icon="@drawable/ic_action_copy"
+		android:title="@string/action_copy"
+		android:showAsAction="ifRoom" />
+</menu>

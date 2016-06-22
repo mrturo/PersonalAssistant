@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/callContact"
+		android:icon="@drawable/ic_action_call"
+		android:title="@string/action_call_contact"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/extensionsMenu"
+		android:icon="@drawable/ic_action_call"
+		android:title="@string/action_call_contact"
+		android:showAsAction="ifRoom" >
+		<menu >
+		</menu>
+	</item>
+	<item android:id="@+id/attachMedia"
+		android:icon="@drawable/ic_action_attachment"
+		android:title="@string/action_attach_media"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/searchMessage"
+		android:title="@string/action_search"
+		android:icon="@drawable/ic_action_search"
+		android:showAsAction="never|collapseActionView"
+		android:actionViewClass="android.widget.SearchView" />
+	<item android:id="@+id/deleteConversation"
+		android:icon="@drawable/ic_action_discard"
+		android:title="@string/action_delete_conversation"
+		android:showAsAction="never" />
+</menu>

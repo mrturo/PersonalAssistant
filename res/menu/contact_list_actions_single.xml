@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/deleteConversation"
+		android:icon="@drawable/ic_action_discard"
+		android:title="@string/action_delete_conversation"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/contactInfo"
+		android:icon="@drawable/ic_action_about"
+		android:title="@string/action_contact_info"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/callContact"
+		android:icon="@drawable/ic_action_call"
+		android:title="@string/action_call_contact"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/extensionsMenu"
+		android:icon="@drawable/ic_action_call"
+		android:title="@string/action_call_contact"
+		android:showAsAction="ifRoom" >
+		<menu >
+		</menu>
+	</item>
+	<item android:id="@+id/addGroup"
+		android:icon="@drawable/ic_action_add_group"
+		android:title="@string/action_add_group"
+		android:showAsAction="ifRoom" />
+	<item android:id="@+id/deleteConversations"
+		android:icon="@drawable/ic_action_discard"
+		android:title="@string/action_delete_conversations"
+		android:showAsAction="never" />
+	<item android:id="@+id/logoutAccount"
+		android:icon="@drawable/ic_action_cancel"
+		android:title="@string/action_logout"
+		android:showAsAction="never" />
+</menu>

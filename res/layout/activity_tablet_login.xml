@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.fonax.android.view.activity.LoginActivity"
+	tools:ignore="MergeRootFrame" >
+	
+	<LinearLayout
+        android:id="@+id/phoneLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+	        android:id="@+id/appInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+			android:layout_gravity="center_vertical|right" >
+	        <ImageView
+				android:id="@+id/iconView"
+				android:layout_width="100dip"
+				android:layout_height="100dip"
+				android:layout_gravity="right"
+				android:src="@drawable/ic_max" />
+	        <TextView
+	            android:layout_width="135dip"
+	            android:layout_height="wrap_content"
+	            android:text="@string/app_name"
+				android:layout_gravity="right"
+				android:gravity="right"
+				android:textAlignment="center"
+	            android:textSize="32sp"
+	            android:textColor="@color/black" />
+        </LinearLayout>
+        <View
+		    android:layout_width="1dp"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="5dp"
+		    android:background="#FF555555" />
+        <include
+	        android:id="@+id/authPanel"
+	        layout="@layout/panel_login"
+			android:layout_width="500dip"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

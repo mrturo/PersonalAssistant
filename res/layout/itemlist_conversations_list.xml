@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_generic_profile_picture" />
+    
+    <ImageView
+        android:id="@+id/availableIcon"
+        android:layout_width="15dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/profilePicture"
+        android:src="@drawable/ic_chat_unavailable" />
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/dateTime"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/noUnreadMessages"
+        android:layout_toRightOf="@id/availableIcon"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:text="Contact Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        android:textSize="20sp"
+        android:textStyle="bold"
+		android:textColor="@color/black" />
+    
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/lastMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/name"
+        android:layout_toLeftOf="@+id/dateTime"
+        android:layout_toRightOf="@id/availableIcon"
+        android:gravity="center_vertical|left"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:text="LastMessageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/noUnreadMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:text="00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/gray"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>

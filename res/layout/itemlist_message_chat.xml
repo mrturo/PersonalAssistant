@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagePicture"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_generic_profile_picture" />
+    
+    <ImageView
+        android:id="@+id/statusMessage"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@+id/body"
+        android:layout_toLeftOf="@+id/body"
+        android:src="@drawable/ic_wait" />
+
+    <TextView
+        android:id="@+id/sender"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_below="@+id/body"
+        android:singleLine="false"
+        android:ellipsize="marquee"
+        android:text="Text"
+        android:textSize="12sp"
+		android:textColor="@color/black" />
+    
+    <com.rockerhieu.emojicon.EmojiconTextView
+        android:id="@+id/body"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:text="(0)123456789(1)123456789(2)123456789(3)123456789"
+        android:textSize="16sp"
+        android:background="@drawable/chat_bubble_right_all"
+		android:textColor="@color/black" />
+
+</RelativeLayout> 
